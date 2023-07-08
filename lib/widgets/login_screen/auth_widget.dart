@@ -95,7 +95,7 @@ class __AuthFormState extends State<_AuthForm> {
   }
 
   void _resetPassword() {
-    print("Password reseted");
+    print("Password reseted!");
   }
 
   @override
