@@ -40,3 +40,9 @@ abstract class AbstButtonStyles {
     ),
   );
 }
+
+// == COLORS ==========
+
+abstract class AppColors {
+  static final mainDarkBlue = Color.fromRGBO(3, 37, 65, 1);
+}

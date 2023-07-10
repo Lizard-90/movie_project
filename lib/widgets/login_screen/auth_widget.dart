@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:movie_project/widgets/login_screen/resourses.dart';
-import 'package:movie_project/widgets/main_screen/main_screen_widget.dart';
 
 class AuthWidget extends StatefulWidget {
   const AuthWidget({super.key});
@@ -77,8 +76,8 @@ class _AuthForm extends StatefulWidget {
 }
 
 class __AuthFormState extends State<_AuthForm> {
-  final _loginController = TextEditingController();
-  final _passwordController = TextEditingController();
+  final _loginController = TextEditingController(text: 'admin');
+  final _passwordController = TextEditingController(text: 'admin');
   String? errorText = null;
 
   void _auth() {
