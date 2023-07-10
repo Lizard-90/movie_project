@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:movie_project/widgets/login_screen/resourses.dart';
+import 'package:movie_project/widgets/main_screen/main_screen_widget.dart';
 
 class AuthWidget extends StatefulWidget {
   const AuthWidget({super.key});
@@ -87,6 +88,8 @@ class __AuthFormState extends State<_AuthForm> {
     if (login == 'admin' && password == 'admin') {
       print("open application");
       errorText = null;
+
+      Navigator.of(context).pushNamed('/main_screen');
     } else {
       print('Error login');
       errorText = "Wrong login / password";
